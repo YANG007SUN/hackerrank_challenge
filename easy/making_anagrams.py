@@ -26,7 +26,7 @@ def makeAnagram(a, b):
     d2 = Counter(b)
 
     total = (d1-d2)+(d2-d1)
-    return sum(total.values)
+    return sum(total.values())
 
 
 a = input()
