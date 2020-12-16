@@ -16,15 +16,15 @@ def med(arr, d, m):
     else: 
         return arr[m]
 
-    for i in range(d,n):
-        # if current spending is greater or equal to 2* d months median
-        if exp[i]>=2*med(arr, d, m):
-            counter+=1
-        # del the most left value in the arr
-        del arr[bisect.bisect_left(arr, exp[i-d])] # i starts from d, as i increases i-d will start from 0, 1....
-        bisect.insort(arr, exp[i])
+for i in range(d,n):
+    # if current spending is greater or equal to 2* d months median
+    if exp[i]>=2*med(arr, d, m):
+        counter+=1
+    # del the most left value in the arr
+    del arr[bisect.bisect_left(arr, exp[i-d])] # i starts from d, as i increases i-d will start from 0, 1....
+    bisect.insort(arr, exp[i])
 
-    print(counter)
+print(counter)
     
 
 
