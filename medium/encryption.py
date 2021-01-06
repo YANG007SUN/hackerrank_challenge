@@ -16,4 +16,26 @@ def encryption(s):
         res.append(''.join(temp))
         
     print(' '.join(res))
+
+
+
+# =======================================================
+# print out specific length of substring in a big string
+# Example: print out substring length =4.
+# output: feed, theg, og
+# =======================================================
+
+ct = 0
+s = 'feedthedog'
+for i in range(4):
+    j =0
+    sub = ''
+    while j<c and ct<len(s):
+        sub+=s[ct]
+#         print(sub, s[ct], ct, j)
+        j+=1
+        ct+=1
         
+        
+        
+    print(sub)
